@@ -49,7 +49,7 @@ function App() {
       <Router>
         <div>
           {/*
-              TODO: Wrap components with Provider imported from 'react-redux'
+              Wrap components with Provider imported from 'react-redux'
               and create attribute 'store' assigned with store imported from store.js
           */}
           <Provider store={store}>

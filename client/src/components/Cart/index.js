@@ -5,13 +5,6 @@ import { QUERY_CHECKOUT } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
-
-// TODO:
-//  remove the following line of code
-// import { useStoreContext } from '../../utils/GlobalState';
-
-// TODO:
-//  import { useDispatch, useSelector } from 'react-redux';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
@@ -20,15 +13,10 @@ import './style.css';
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
-  // TODO:
-  //  remove the following code
-  // const [state, dispatch] = useStoreContext();
 
-  // TODO:
   //  create const variable 'dispatch' and assign the returned value from useDispatch() to it
   const dispatch = useDispatch();
 
-  // TODO:
   //  create const variable 'state' and assign the returned value from useSelector() to it
   //  pass callback function '(state) => state' as input argument to useSelector()
   const state = useSelector((state) => state);

@@ -10,7 +10,6 @@ import {
   TOGGLE_CART
 } from "./actions";
 
-// TODO:
 //  create a const variable 'initialState' object which has the following properties:
 //    'products' and initalize it with an empty array
 //    'categories' and initialize it with an empty array
@@ -27,7 +26,6 @@ const initialState =  {
       
     };
 
-//  ToDO:
 //    Make the first input parameter 'state' accept 'initialState' as its default value
 export const reducers = (state = initialState, action) => {
   switch (action.type) {
@@ -103,12 +101,5 @@ export const reducers = (state = initialState, action) => {
   }
 };
 
-// TODO:
-//  remove the following code
-// export function useProductReducer(initialState) {
-//   return useReducer(reducer, initialState);
-// }
-
-// TODO:
 //  add export default reducers below
 export default reducers;

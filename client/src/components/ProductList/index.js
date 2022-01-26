@@ -1,12 +1,5 @@
 import React, { useEffect } from 'react';
 import ProductItem from '../ProductItem';
-
-// TODO:
-//  remove the following line of code
-// import { useStoreContext } from '../../utils/GlobalState';
-
-// TODO:
-//  import { useDispatch, useSelector } from 'react-redux';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { UPDATE_PRODUCTS } from '../../utils/actions';
@@ -16,15 +9,9 @@ import { idbPromise } from '../../utils/helpers';
 import spinner from '../../assets/spinner.gif';
 
 function ProductList() {
-  // TODO:
-  //  remove the following code
-  // const [state, dispatch] = useStoreContext();
 
-  // TODO:
-  //  create const variable 'dispatch' and assign the returned value from useDispatch() to it
   const dispatch = useDispatch();
 
-  // TODO:
   //  create const variable 'state' and assign the returned value from useSelector() to it
   //  pass callback function '(state) => state' as input argument to useSelector()
   const state = useSelector((state) => state);
